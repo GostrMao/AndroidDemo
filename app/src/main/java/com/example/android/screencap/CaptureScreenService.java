@@ -30,25 +30,19 @@ import java.io.File;
 import java.nio.ByteBuffer;
 
 public class CaptureScreenService extends Service {
-    private int mResultCode;
-    private Intent mResultData;
 
-    private String tag = "wltx_screencap" ;
-    private final static int REQUEST_MEDIA_PROJECTION = 0;
-    private int number = 0 ;
-
-    public static MediaProjectionManager mediaProjectionManager;
-    public static MediaProjection mediaProjection;
+//    public static MediaProjectionManager mediaProjectionManager;
+//    public static MediaProjection mediaProjection;
 
     public CaptureScreenService() {
     }
 
-    public static void setMediaProject(MediaProjection mediaProjection){
-        CaptureScreenService.mediaProjection = mediaProjection;
-    }
-    public static void setMediaProjectionManager(MediaProjectionManager mediaProjectionManager){
-        CaptureScreenService.mediaProjectionManager = mediaProjectionManager;
-    }
+//    public static void setMediaProject(MediaProjection mediaProjection){
+//        CaptureScreenService.mediaProjection = mediaProjection;
+//    }
+//    public static void setMediaProjectionManager(MediaProjectionManager mediaProjectionManager){
+//        CaptureScreenService.mediaProjectionManager = mediaProjectionManager;
+//    }
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -56,15 +50,9 @@ public class CaptureScreenService extends Service {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
-
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         createNotificationChannel();
-//        mResultCode = intent.getIntExtra("code", -1);
-//        mResultData = intent.getParcelableExtra("data");
-
-        // Step 2: 获取 MediaProjection 对象
-//        mediaProjection = mediaProjectionManager.getMediaProjection(mResultCode, mResultData);
         return super.onStartCommand(intent, flags, startId);
     }
 

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.android.browser.BrowserActivity;
 import com.example.android.hybrid.QuickAppActivity;
 import com.example.android.location.LocationActivity;
 import com.example.android.screencap.ScreenCapActivity;
