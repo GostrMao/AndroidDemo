@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.android.R;
@@ -24,8 +24,7 @@ public class ScreenCapActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_cap);
-
+        setContentView(R.layout.activity_screencap);
 
         findViewById(R.id.screencap_bt_1).setOnClickListener(this);
         findViewById(R.id.screencap_bt_2).setOnClickListener(this);
@@ -42,6 +41,8 @@ public class ScreenCapActivity extends AppCompatActivity implements View.OnClick
             View v = getWindow().getDecorView();     // 获取DecorView
             bitmap = Bitmap.createBitmap(v.getWidth(), v.getHeight(), Bitmap.Config.ARGB_8888);
 
+            ImageView image = findViewById(R.id.imageView);
+            image.setImageBitmap(bitmap);
         }else if(id == R.id.screencap_bt_2){// 方式二: 组件截屏
             bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
 
@@ -64,7 +65,7 @@ public class ScreenCapActivity extends AppCompatActivity implements View.OnClick
                 fileOutputStream.flush();
                 fileOutputStream.close();
 
-                Log.d(tag, "存储完成");
+                Log.d(tag, "存储完成：" + filePath);
                 number += 1 ;
             } catch (Exception e) {
                 throw new RuntimeException(e);
