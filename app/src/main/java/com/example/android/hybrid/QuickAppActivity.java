@@ -1,4 +1,4 @@
-package com.example.android.quickapp;
+package com.example.android.hybrid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
