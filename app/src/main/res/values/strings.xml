@@ -2,10 +2,12 @@
     <string name="app_name">Android</string>
     <string name="main_location">位置信息</string>
     <string name="main_quickpp">快应用</string>
+    <string name="main_screencap">截屏功能</string>
 
     <string name="location_position">获取定位信息</string>
     <string name="location_geofence">地理围栏Geofence</string>
     <string name="quickapp_get_quickapp">Intent拉起快应用</string>
 
     <string name="protocol_title_sp">协议类型</string>
+
 </resources>

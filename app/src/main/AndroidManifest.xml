@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Android"
         tools:targetApi="31">
         <activity
-            android:name=".QuickApp.QuickAppActivity"
+            android:name=".screencap.ScreenCapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uickapp.QuickAppActivity"
             android:exported="false" />
         <activity
             android:name=".location.LocationActivity"
