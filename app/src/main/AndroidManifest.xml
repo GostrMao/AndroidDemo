@@ -14,10 +14,10 @@
         tools:targetApi="31">
         <activity
             android:name=".screencap.ScreenCapActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".quickapp.QuickAppActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".location.LocationActivity"
             android:exported="true" />
