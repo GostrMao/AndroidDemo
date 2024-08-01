@@ -1,4 +1,4 @@
-package com.example.android.uickapp;
+package com.example.android.quickapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 

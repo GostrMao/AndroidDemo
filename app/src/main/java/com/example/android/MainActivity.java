@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.android.uickapp.QuickAppActivity;
+import com.example.android.quickapp.QuickAppActivity;
 import com.example.android.location.LocationActivity;
 import com.example.android.screencap.ScreenCapActivity;
 

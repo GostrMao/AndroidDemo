@@ -16,7 +16,7 @@
             android:name=".screencap.ScreenCapActivity"
             android:exported="false" />
         <activity
-            android:name=".uickapp.QuickAppActivity"
+            android:name=".quickapp.QuickAppActivity"
             android:exported="false" />
         <activity
             android:name=".location.LocationActivity"
