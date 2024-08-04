@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/appwidget_view"
+    android:minWidth="250dp"
+    android:minHeight="40dp"
+    android:previewImage="@drawable/ic_launcher_foreground"
+    android:updatePeriodMillis="1800000">
+</appwidget-provider>
+    <!--   Widget的布局文件，确定Widget中有哪些组件，怎么排列  -->
