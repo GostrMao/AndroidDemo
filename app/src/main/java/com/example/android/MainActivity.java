@@ -1,7 +1,6 @@
 package com.example.android;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +14,7 @@ import com.example.android.location.LocationActivity;
 import com.example.android.screencap.ScreenCapActivity;
 import com.example.android.AppInfo.UnInstallApp;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
+public class MainActivity extends Activity implements View.OnClickListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
