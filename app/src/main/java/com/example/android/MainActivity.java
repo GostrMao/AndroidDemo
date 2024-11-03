@@ -13,6 +13,7 @@ import com.example.android.content_provider.ContentProviderActivity;
 import com.example.android.hybrid.QuickAppActivity;
 import com.example.android.location.LocationActivity;
 import com.example.android.screencap.ScreenCapActivity;
+import com.example.android.AppInfo.UnInstallApp;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.screencap_bt).setOnClickListener(this);
         findViewById(R.id.browser_bt).setOnClickListener(this);
         findViewById(R.id.contentProvider_bt).setOnClickListener(this);
+        findViewById(R.id.AppInfo_bt).setOnClickListener(this);
     }
 
 
@@ -44,7 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(context, BrowserActivity.class));
         }else if(id == R.id.contentProvider_bt) {// 内容提供程序
             startActivity(new Intent(context, ContentProviderActivity.class));
-        }else{
+        } else if (id == R.id.AppInfo_bt) {
+            startActivity(new Intent(context,UnInstallApp.class));
+        } else{
             Toast.makeText(context,"你点击了哪里？？？",Toast.LENGTH_SHORT).show();
         }
     }

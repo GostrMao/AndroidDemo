@@ -32,6 +32,7 @@ public final class CaptureScreenUtils implements TContentObserver.Utils {
     @Override
     public void getUriInfo(Uri uri) {
         String uri_path = uri.getPath();
+        Log.d(tag, "_____________________________________________");
         Log.d(tag, String.valueOf(uri));
         Log.d(tag, uri_path);
 
