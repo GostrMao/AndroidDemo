@@ -48,7 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener  {
         } else if (id == R.id.AppInfo_bt) {
             startActivity(new Intent(context,UnInstallApp.class));
         } else{
-            Toast.makeText(context,"你点击了哪里？？？",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"你点击了哪q里？？？",Toast.LENGTH_SHORT).show();
         }
     }
 }
